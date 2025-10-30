@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Дайвинчик — поиск</title>
+	<link rel="stylesheet" href="/styles.css">
+	<script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+	<div class="container with-tabbar">
+		<main id="views">
+			<section id="view-profile" class="card view hidden">
+				<h2>Моя анкета</h2>
+				<div id="me-content">Загрузка...</div>
+			</section>
+			<section id="view-search" class="card view">
+				<h2>Поиск</h2>
+				<div id="candidate-content">Загрузка...</div>
+				<div class="actions">
+					<button id="dislike" class="btn btn-secondary">❌ Дизлайк</button>
+					<button id="like" class="btn btn-primary">❤️ Симпатия</button>
+				</div>
+			</section>
+			<section id="view-likes" class="card view hidden">
+				<h2>Мои симпатии</h2>
+				<div id="likes-list">Загрузка...</div>
+			</section>
+		</main>
+	</div>
+
+	<nav class="tabbar">
+		<button data-tab="profile" class="tab active">Профиль</button>
+		<button data-tab="search" class="tab">Поиск</button>
+		<button data-tab="likes" class="tab">Мои симпатии</button>
+	</nav>
+
+	<script src="/app.js"></script>
+</body>
+</html>
